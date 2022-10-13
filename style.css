@@ -1,0 +1,1155 @@
+@font-face {
+    font-family: ap1;
+    src: url(font1.woff2);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    font-family: ap1;
+}
+#main{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+.menulayer{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 99999;
+    color: white;
+    top: -100%;
+    
+} 
+.menulayer>ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.menulayer>ul>li{
+    font-size: 4vw;
+}
+
+#first{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+#first>.ri-menu-line{
+    position: absolute;
+    font-size: 2.5vw;
+    top: 15%;
+    right: 5%;
+    z-index: 99999999;
+    display: none;
+    opacity: 1;
+    position: fixed;
+    cursor: pointer;
+
+}
+#first>.ri-close-fill{
+    position: absolute;
+    font-size: 2.5vw;
+    top: 15%;
+    right: 5%;
+    z-index: 9999999;
+    display: none;
+    opacity: 0;
+    position: fixed;
+    cursor: pointer;
+
+}
+
+#first>.text{
+    position: absolute;
+    height: 25vh;
+    width: 60%;
+    display: flex;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 9;
+}
+
+#first>#navbar{
+    position: absolute;
+    height: 11vh;
+    position: fixed;
+    width: 100%;
+    /* border-bottom:2px solid white; */
+    z-index: 999;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+#navbar>h4{
+    color: white;
+    font-weight: 100;
+    padding-left: 30px;
+}
+#navbar>.navbar{
+    position: absolute;
+    height: 2%;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    transition: all 0.3s linear;
+    /* opacity: 0.2; */
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    /* -webkit-backdrop-filter: blur(); */
+}
+.navbar>a{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    padding-left: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.navbar>a{
+    height: 100%;
+    border-right: 1px solid white;
+    width: 33.3%;
+
+    
+}
+
+
+.navbar>a:nth-child(1){
+    background-color: white;
+    color: black;
+}
+
+#navbar:hover>.navbar{
+    height: 100%;
+}
+
+.text>h1{
+    font-size: 10vw;
+    font-weight: 100;
+}
+img{
+    object-fit: cover;
+    object-position: center;
+}
+.mg1{
+    position: absolute;
+    height: 20vw;
+    width: 15vw;
+    box-direction: 1px solid white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    opacity: 0;
+
+}
+.mg2{
+    position: absolute;
+    height: 25vw;
+    width: 40vw;
+    box-direction: 1px solid white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    opacity: 0;
+
+
+
+}
+.mg3{
+    position: absolute;
+    height: 20vw;
+    width: 15vw;
+    box-direction: 1px solid white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    opacity: 0;
+}
+.img1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+.image{
+    position: absolute;
+    height: 20vw;
+    width: 15vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    z-index: 99;
+
+}
+.image>.txt{
+    position: absolute;
+    height: 25vw;
+    width: 45vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.txt>h1{
+    font-size: 10vw;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+
+.image>.txt:hover{
+    text-decoration: underline;
+}
+
+#first>.nav{
+    position: absolute;
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    top: 20%;
+}
+.nav>ul{
+    display: flex;
+    width: 35%;
+    list-style: none;
+    justify-content: space-around;
+    position: absolute;
+    right: 0%;
+}
+.nav>ul>a{
+    padding-left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.nav>ul>a:hover{
+    text-decoration: underline;
+}
+
+
+
+#sec{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+#sec>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#sec>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 45vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+
+}
+#sec>.txt:hover{
+    text-decoration: underline;
+}
+#third{
+    
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#third>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#third>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 45vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+
+}
+#third>.txt:hover{
+    text-decoration: underline;
+}
+
+#fourth{
+    
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#fourth>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#fourth>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 70vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+
+}
+#fourth>.txt:hover{
+    text-decoration: underline;
+}
+
+
+#fifth{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+#fifth>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#fifth>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 45vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+
+}
+#fifth>.txt:hover{
+    text-decoration: underline;
+}
+#sixth{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+#sixth>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#sixth>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 45vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+
+
+}
+#sixth>.txt:hover{
+    text-decoration: underline;
+}
+#seven{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+#seven>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#seven>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 45vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+
+
+}
+#seven>.txt:hover{
+    text-decoration: underline;
+}
+#eight{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+
+}
+#eight>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#eight>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 45vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+
+
+}
+#eight>.txt:hover{
+    text-decoration: underline;
+}
+#ninth{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+#ninth>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#ninth>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 45vw;
+    position: fixed;
+    top: 50%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+
+
+}
+#ninth>.txt:hover{
+    text-decoration: underline;
+}
+
+#ten{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#ten>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+#ten>.txt{
+    position: absolute;
+    height: 15vw;
+    width: 45vw;
+    position: fixed;
+    top: 40%;
+    /* border: 1px solid red; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+
+
+}
+#ten>.txt:hover{
+    text-decoration: underline;
+}
+#ten>.txt>h1>a{
+    text-decoration: none;
+    color: white;
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+
+    #main{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+    }
+    .menulayer{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        z-index: 99999;
+        color: white;
+        top: -100%;
+    } 
+    .menulayer>ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+    .menulayer>ul>a{
+        font-size: 11vw;
+        text-decoration: none;
+        color: white;
+    }
+    #first{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        color: white;
+
+    }
+    #first>.ri-menu-line{
+        position: absolute;
+        font-size: 2.5vw;
+        top: 5%;
+        right:10%;
+        z-index: 99999999;
+        display: block;
+        opacity: 1;
+        position: fixed;
+        cursor: pointer;
+    
+    }
+    #first>.ri-close-fill{
+        position: absolute;
+        font-size: 2.5vw;
+        top: 5%;
+        right: 10%;
+        z-index: 9999999;
+        display: block;
+        opacity: 0;
+        position: fixed;
+        cursor: pointer;
+    
+    }
+    #first>.text{
+        position: absolute;
+        height: 25vh;
+        width: 60%;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        z-index: 9;
+    }
+    
+    #first>#navbar{
+        position: absolute;
+        height: 11vh;
+        position: fixed;
+        width: 100%;
+        /* border-bottom:2px solid white; */
+        z-index: 999;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        display: none;
+        
+    }
+    #navbar>h4{
+        color: white;
+        font-weight: 100;
+        padding-left: 30px;
+    }
+    #navbar>.navbar{
+        position: absolute;
+        height: 2%;
+        bottom: 0%;
+        width: 100%;
+        background-color: rgb(202, 202, 202);
+        transition: all 0.3s linear;
+        /* opacity: 0.2; */
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        /* -webkit-backdrop-filter: blur(); */
+    }
+    .navbar>a{
+        display: flex;
+        justify-content: left;
+        text-align: center;
+        align-items: center;
+        padding: 5px;
+        padding-left: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+    .navbar>a{
+        height: 100%;
+        border-right: 1px solid white;
+        width: 33.3%;
+    
+        
+    }
+    
+    
+    .navbar>a:nth-child(1){
+        background-color: white;
+        color: black;
+    }
+    
+    #navbar:hover>.navbar{
+        height: 100%;
+    }
+    
+    .text>h1{
+        font-size: 10vw;
+        font-weight: 100;
+    }
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+    .mg1{
+        position: absolute;
+        height: 35vw;
+        width: 30vw;
+        box-direction: 1px solid white;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* display: none; */
+        opacity: 0;
+    
+    }
+    .mg2{
+        position: absolute;
+        height: 35vw;
+        width: 70vw;
+        box-direction: 1px solid white;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* display: none; */
+        opacity: 0;
+    
+    
+    
+    }
+    .mg3{
+        position: absolute;
+        height: 35vw;
+        width: 30vw;
+        box-direction: 1px solid white;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* display: none; */
+        opacity: 0;
+    }
+    .img1{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        
+        
+    }
+    .image{
+        position: absolute;
+        height: 20vw;
+        width: 15vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        z-index: 99;
+    
+    }
+    .image>.txt{
+        position: absolute;
+        height: 25vw;
+        width: 45vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+    
+    }
+    .txt>h1{
+        font-size: 10vw;
+        font-weight: 100;
+        text-align: center;
+    
+    }
+    
+    
+    .image>.txt:hover{
+        text-decoration: underline;
+    }
+    
+    #first>.nav{
+        position: absolute;
+        height: 5vh;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        z-index: 999;
+        position: fixed;
+        top: 20%;
+        display: none;
+    }
+    .nav>ul{
+        display: flex;
+        width: 35%;
+        list-style: none;
+        justify-content: space-around;
+        position: absolute;
+        right: 0%;
+    }
+    .nav>ul>a{
+        padding-left: 20px;
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+    .nav>ul>a:hover{
+        text-decoration: underline;
+    }
+    
+    
+    
+    #sec{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    #sec>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #sec>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 45vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+    
+    }
+    #sec>.txt:hover{
+        text-decoration: underline;
+    }
+    #third{
+        
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    #third>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #third>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 45vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+    
+    }
+    #third>.txt:hover{
+        text-decoration: underline;
+    }
+    
+    #fourth{
+        
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    #fourth>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #fourth>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 70vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+    
+    }
+    #fourth>.txt:hover{
+        text-decoration: underline;
+    }
+    
+    
+    #fifth{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    #fifth>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #fifth>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 45vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+    
+    }
+    #fifth>.txt:hover{
+        text-decoration: underline;
+    }
+    #sixth{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    #sixth>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #sixth>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 45vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+    
+    
+    }
+    #sixth>.txt:hover{
+        text-decoration: underline;
+    }
+    #seven{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    #seven>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #seven>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 45vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+    
+    
+    }
+    #seven>.txt:hover{
+        text-decoration: underline;
+    }
+    #eight{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        
+    
+    }
+    #eight>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #eight>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 45vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+    
+    
+    }
+    #eight>.txt:hover{
+        text-decoration: underline;
+    }
+    #ninth{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    #ninth>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #ninth>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 45vw;
+        position: fixed;
+        top: 50%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+    
+    
+    }
+    #ninth>.txt:hover{
+        text-decoration: underline;
+    }
+    
+    #ten{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+    }
+    #ten>img
+    {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+    
+    #ten>.txt{
+        position: absolute;
+        height: 15vw;
+        width: 45vw;
+        position: fixed;
+        top: 40%;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+    
+    
+    }
+    #ten>.txt:hover{
+        text-decoration: underline;
+    }
+    #ten>.txt>h1>a{
+        text-decoration: none;
+        color: white;
+        display: none;
+    
+    }
+    
+}

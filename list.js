@@ -42,7 +42,7 @@ var flag =0;
 document.querySelector(".ri-menu-line").addEventListener("click",function(){
     if(flag===0){
         gsap.to(".menulayer",{
-            y:"100%",
+            x:"100%",
             ease: "power1.out",
             duration:1.5
         })
@@ -62,7 +62,7 @@ document.querySelector(".ri-menu-line").addEventListener("click",function(){
     }
     else{
         gsap.to(".menulayer",{
-            y:"-100%",
+            x:"-100%",
             ease: "power1.out",
             duration:1.5
 

@@ -25,7 +25,7 @@ html,body{
     background-color: black;
     z-index: 99999;
     color: white;
-    top: -100%;
+    left: -100%;
     
 } 
 .menulayer>ul{
@@ -624,7 +624,7 @@ img{
         background-color: black;
         z-index: 99999;
         color: white;
-        top: -100%;
+        left: -100%;
     } 
     .menulayer>ul{
         height: 100%;

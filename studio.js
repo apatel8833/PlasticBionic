@@ -5,7 +5,7 @@ document.querySelector(".ri-menu-line").addEventListener("click",function(){
         gsap.to(".menulayer",{
             x:"100%",
             ease: "power1.out",
-            duration:1.5
+            duration:1
         })
         gsap.to(".ri-menu-line",{
             rotation:180,
@@ -25,7 +25,7 @@ document.querySelector(".ri-menu-line").addEventListener("click",function(){
         gsap.to(".menulayer",{
             x:"-100%",
             ease: "power1.out",
-            duration:1.5
+            duration:1
 
        
         })
